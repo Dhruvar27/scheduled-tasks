@@ -20,7 +20,7 @@ file_path = f"./letter_templates/letter_{random.randint(1, 3)}.txt"
 import pandas as pd
 df = pd.read_csv("birthdays.csv")
 for index, row in df.iterrows():
-    if row.day == day and row.month == month:
+    # if row.day == day and row.month == month:
         with open(file_path, mode="r") as letter:
             letter_contents = letter.read()
 
